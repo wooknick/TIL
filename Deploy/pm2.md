@@ -3,20 +3,22 @@
 github에서 바로 배포
 
 1. Local / Remote 모두 pm2 설치
-   > npm i -g pm2
+
+   > \$> npm i -g pm2
+
 2. SSH Key 등록
 
 - local에서 실행. remote에 패스워드 없이 접속하기 위함.
 
-  > \$> ssh-copy-id id@**_._**.**_._**
+  > \$> ssh-copy-id id@hostname
 
 - remote에서 실행. git에 패스워드 없이 접속해서 소스를 받아오기 위함. 생성된 키를 [Github SSH Keys](https://github.com/settings/keys)에 등록.
 
-> \$> ssh-keygen
+  > \$> ssh-keygen
 
-> \$> cat ~/.ssh/id_rsa.pub
+  > \$> cat ~/.ssh/id_rsa.pub
 
-> \$> ssh -T git@github.com
+  > \$> ssh -T git@github.com
 
 3. ecosystem.config.js
 
@@ -55,9 +57,10 @@ module.exports = {
 4. deploy
 
 - 최초 한 번 실행
+
   > \$> pm2 deploy production setup
 
-> \$> pm2 deploy ecosystem.config.js production
+  > \$> pm2 deploy ecosystem.config.js production
 
 - 지속적 배포
   > \$> pm2 deploy production update
