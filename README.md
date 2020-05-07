@@ -2,6 +2,10 @@
 
 Today I Learned
 
+## Algorithm
+
+- [javascript 유틸](https://github.com/wooknick/til/blob/master/Algorithm/javascriptUtil.md)
+
 ## Deploy
 
 - [pm2 배포](https://github.com/wooknick/til/blob/master/Deploy/pm2.md)
