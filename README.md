@@ -5,6 +5,7 @@ Today I Learned
 ## Algorithm
 
 - [javascript 유틸](https://github.com/wooknick/til/blob/master/Algorithm/javascriptUtil.md)
+- [이항계수 nCr mod p](https://github.com/wooknick/til/blob/master/Algorithm/nCr_mod_p.md)
 
 ## Deploy
 
